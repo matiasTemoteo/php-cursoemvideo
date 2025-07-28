@@ -138,3 +138,19 @@ Versões do PHP:
      - Enumerations (ENUM)
      - Readonly properties (POO)
      - Fibers
+
+
+Ainda vale a pena Estudar PHP?
+
+ - Todas as linguagens um dia irão morrer.
+ - Não é por isso que devemos evitar aprender uma linguagem.
+
+ - As principais estatisticas de uso da linguagem demonstram
+   que a versão mais atual esta sempre em constante evolução
+   e aumento na adesão de programadores na comunidade.
+
+ - O uso da linguagem se mantém constante e em um nível mais
+   alto até que muitas tecnologias consideradas mais atuais.
+
+ - Muitas empresas utilizam o PHP em seus projetos na atualidade.
+ - Muitos projetos antigos e atuais utilizam o PHP.
