@@ -75,3 +75,66 @@ Por que o mascote é um Elefante?
    segundo ele, a própria palavra PHP, visualmente lembra um
    elefante. A ideia pegou e assim o PHP ganhou seu pesado e
    simpático mascote.
+
+
+Versões do PHP:
+
+ - 1.0: Lançado em 1995.
+     - Personal Home Page
+     - Funcionalidades simples para sites básicos
+     - Não tinha características de uma linguagem de Programação
+
+ - 2.0: Lançado em 1997.
+     - Oficialmente nomeado como PHP/FI
+     - Linguagem Standalone
+     - Recursos Limitados
+
+ - 3.0: Lançado em 1998.
+     - Primeira versão colaborativa
+     - Características mais relacionadas a uma liguagem de programação
+     - Extension APIs
+
+ - 4.0: Lançado em 2000.
+     - Zend Engine 1.0
+     - Melhoria de performance
+     - Aumento da modularização
+     - Conceitos de Super globais ($_GET, $_POST, $_SESSION)
+
+ - 5.0: Lançado em 2004.
+     - Zend Engine 2.0
+     - Orienração a Objetos
+     - PHP Data Objects (PDO)
+     - Operador de exponenciação
+     - Suporte a JSON
+     - Namespaces, closures, garbage collection, exceptions handling
+     - Novo depurador (phpdbg)
+
+     * Problemas de segurança e performance
+
+     * Nos anos seguintes existiu a promessa da versão 6.0, com
+     aumento da segurança e performance e adição de suporte a 
+     unicode. Porém a versão 6.0 nunca teve uma release oficial.
+
+ - 7.0: Lançado em 2015.
+     - Zend Engine 3.0
+     - Performance até 9x maior que a versão 5.7
+     - Escape de código Unicode
+     - Operador de null coalescing (??)
+     - Declaração Escalar
+     - Operador spaceship (<=>)
+     - Classes Anonimas
+     - Excessões mais modernas
+     - Retorno Void
+     - Libsodium
+     - Foreign function interface
+
+ - 8.0: Lançado em 2020.
+     - Zend Engine 4.0
+     - Just-in-time compilation
+     - Locale-independent number convertions
+     - Named arguments
+     - Expressão Match
+     - Operador nullsafe
+     - Enumerations (ENUM)
+     - Readonly properties (POO)
+     - Fibers
