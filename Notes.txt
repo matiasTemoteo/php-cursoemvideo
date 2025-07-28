@@ -1,0 +1,68 @@
+Principais Referências bibliográficas de PHP:
+
+ - Documentação Oficial (php.net)
+
+ - Aprendendo PHP (O'really - David Sklar - php 7)
+
+ - PHP Moderno (O'Really - Josh Lockhart)
+
+ - Programmin PHP (O'Really - Kevin Tatroe & Peter Macintyre - php 7.4) 
+
+ - Learn PHP 8 (Steve Prettyman - php 8)
+
+ - PHP 8 Quick Scripting Reference (Mikael Olsson - php 8)
+
+ - PHP & MYSQL (Jon Duckett)
+
+
+História:
+
+ - O PHP foi criado em 1994 por Rasmus Lerdorf aos 25 anos
+   no Canadá. Rasmus era bastante ativo na comunidade e 
+   colaborava constantemente para os projetos do Apache e
+   MySql. Rasmus era bem versado na linguabem C e também em
+   Pearl. No ano de 1994, ele precisava de uma solução de
+   contagem de usuários para o seu site pessoal, assim ele criou
+   uma ferramente chamada 'Personal Home Page' que solucionou seu
+   problema e acabou fazendo sucesso em sua comunidade.
+
+ - No ano de 1995, Rasmus encapsulou a sua solução e lançou
+   sua primeira versão oficialmente como PHP 1.0 (PHP Tools).
+   Além das soluções que a sua tecnologia já atendia, ele 
+   precisava de novas capacidades, e no meio de seus trabalhos,
+   ele renomeou a technologia para Form Interpreter, nomeclatura
+   que perdurou por apenas um mês. Depois sua tecnologia foi
+   renomeada novamente para Personal Homepage Constructor Kit
+   para abranger a implementação de novas capacidades. Nessa
+   época, a tecnologia utilizava comandos das linguagens C e pearl,
+   porém nessa época, sua tecnologia ainda não podia ser chamada
+   de linguagem de programção, estando mais para um kit de construção
+   de ferramenta para web sites.
+
+ - Em 1996, Rasmus lançou o PHP 2.0 que nomeou como PHP/FI (Personal
+   Home Page with Form Interpreter) que já tinha integração com Banco
+   de dados e utilização de cookies. Porém Rasmus ainda era o único
+   desenvolvedor da tecnologia. Também 1996, Rasmus ele então decidiu
+   transformar o PHP em uma tecnologia de código aberto, assim poderia
+   receber apoio da comunidade para a contínua evolução da tecnologia.
+
+ - Uma das maiores contribuição para a tecnologia surgiu em 1997, através
+   de dois estudantes Israelenses (Andi Gutmans e Zeev Suraski). Desse
+   ano até 1998, os dois resstruturaram e reescreveram o PHP, mudando
+   a estrutura e transformando a tecnologia em um linguagem de programação.
+   Após a reestruturação, acrônimo PHP passou a representar  o nome
+   'PHP: Hypertext Preprocessor'. ainda em 1998, dois artistas
+   participaram da nova cara do PHP, Colin Viebrock e Vincent Pontier.
+   colin criou a icônica log do PHP e vincent foi o responsável pelo
+   simpático Mascote da linguagem (elefante).
+
+ - Os dois estudantes Israelenses, criaram em 1999, uma empresa que
+   focaria seus esforços na manutenção e atualização da linguagem.
+   Juntando as iniciais de seus nomes, ciraram assim netão a Zend,
+   empresa que até hoje continua por trás das versões mais atuais do
+   PHP, incluindo o Zend engine que roda por trás da linguagem.
+
+ - Desde a criação da Zend engine, o PHP continuou crescendo, surgindo
+   as versões 4.0 até a 8.0, sendo pulada a versão 6.0. Rasmus deixou
+   de participar da construção da linguagem e seguiu trabalhando na
+   área em outras empresas.
