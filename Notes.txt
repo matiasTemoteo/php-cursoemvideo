@@ -66,3 +66,12 @@ História:
    as versões 4.0 até a 8.0, sendo pulada a versão 6.0. Rasmus deixou
    de participar da construção da linguagem e seguiu trabalhando na
    área em outras empresas.
+
+
+Por que o mascote é um Elefante?
+
+ - Tudo começou com uma ideia de Vincent Pontier, escrevendo a
+   palavra elefante em inglês da seguinte forma elePHPant. Mas
+   segundo ele, a própria palavra PHP, visualmente lembra um
+   elefante. A ideia pegou e assim o PHP ganhou seu pesado e
+   simpático mascote.
