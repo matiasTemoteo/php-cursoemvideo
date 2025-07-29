@@ -239,3 +239,15 @@ Pre-processamento
  o conjunto todo é enviado ao cliente, contendo agora os
  códigos já prontos mais o código gerado pelo resultado do
  PHP.
+
+
+PHP.ini
+
+ O PHP tem um arquivo de configurações chamado PHP.ini que
+ fica disponível no servidor. Nele contém as configurações
+ para declarações de comandos, exibição de erros e etc.
+
+ No apache / xammp, ele fica disponível na pasta 'php'.
+
+ * Sempre que for alterado, requer a reinicialização do
+   servidor.
