@@ -66,3 +66,73 @@ Using Date
 
       - date_default_timezone_set("America/Sao_Paulo"): 
       Define the time zone as São Paulo time.
+
+
+Variables and Constant
+
+  - Variables/constants are spaces in the memory that can be
+    reserved and named by a programming language. These spaces
+    once reserved will be available inside the program and can
+    be retrieved at any moment (considering scope).
+
+  - Variables are spaces that after reserved, can also be
+    modified.
+
+    They are declared using '$' followed by the name to be
+    used for the variable.
+
+    Example:
+
+      - '$name = "Gustavo";': Variable reserved as 'name' with
+         initial value 'gustavo';
+
+      - '$name = "Alberto";': The variable was modified, receiving
+         the value 'Alberto'.
+
+    Rules for variable names:
+
+    - Always start with '$'.
+    - The second char must be a letter or '_'.
+    - From third and so on, accepts alphanumeric chars.
+    - Accepts any char from ASCII after the 128 one.
+    - Accepts chars as Ascentuation.
+    - It is case sensitive.
+    - Reserved names as '$this' are not allowed.
+
+
+  - Constants are spaces that after reserved, will not be
+    modified.
+
+    They are declared using 'const' and will not have '$'
+    before the name as works in the variables.
+
+    Example:
+
+      - 'const COUNTRY = "Brazil";': Constant reserved as
+        'COUNTRY' with value 'Brazil'.
+
+
+    Rules for constants names:
+
+     - Accepts alphanumeric chars from the start to end.
+     - Accepts any char from ASCII after the 128 one.
+     - Accepts chars as Ascentuation.
+     - It is case sensitive.
+
+
+  * Tips for when namming variables/constants
+
+    - Use clear and easy identificators.
+    - Avoid use extreme short or extreme long names.
+    - Define and apply a pattern for namming in all project files and modules.
+    - For variables, prefer using lowercase letters.
+    - For constants, prefer using uppercase letters.
+    - For functions and atributes, using camelcase.
+    - Use snake_case for constant namming.
+
+    
+
+Atributive Oeperators
+
+  - '=': Used to atribute the followed value to a variables or
+    constants.
