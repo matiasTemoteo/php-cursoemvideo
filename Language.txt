@@ -190,7 +190,124 @@ Primitive Types
     - 'var_dump($num)': Shows a message about type and value of the variable '$num' as following: 'int(50)'.
 
 
-Atributive Operators
+Operators
 
   - '=': Used to atribute the followed value to a variables or
     constants.
+
+  - '.': Used to concatenate two different strings (single quoted or
+       double quoted).
+
+
+Strings
+
+  - 'double quoted': Strings envolved in (""). In this type
+     of string, exists the interpretation of the content.
+
+     The interpretation can perform the interpolaion of
+     variables, replacing the variable name by its
+     respective value.
+     
+     The interolation only works with variables, for
+     constants and funtions it ot works. To do the
+     concatenation, it is necessary to use the
+     operator '.' instead.
+
+     Example: 
+
+       - 'PHP \u{1F418}' - String double quoted, when the
+          unicode will be interpretated and replaced by the
+          respective emoji.
+
+       - '$name = "Alberto";' - Declara variável $name
+          'echo "O nome é $name";' - String interpreta a
+          variável e substitui pelo respectivo valor,
+          resultando em: 'O nome é Alberto'.
+
+
+  - 'single quoted': Strings envolved in (''). There is no
+     interpretation of the content, so it will be showed
+     exactly as writen inside.
+
+     Example:
+
+       - 'PHP \u{1F418}' - String single quoted, the unicode
+         will not be interpretated. Resulting in:
+         'PHP \u{1F418}'.
+
+       - '$name = "Alberto";' - Declarate the variable $name.
+          'echo "The name is $name"' - String not interprets
+          the variable and just maintain the text exactly as
+          it was writen resulting in: 'The name is $name'.
+
+
+  - 'Heredoc': Strings with multiple lines as a text block,
+    used in textareas or text blocks, it not works inside
+    HTML. These type of string is not so much used compared
+    to the first types.
+
+    To generate a Heredoc string just use "echo" followed by
+    thre minor then signals: '<<<' and a key word to mark
+    the start and end of the text block.
+
+    The heredoc can do interpretation and iternpolation
+    as the double quoted strings.
+
+    Example:
+
+      - 'echo <<< TEXT 
+      
+        Testing heredoc strings...
+                        Testing heredoc strings...
+      
+      TEXT;': It will generate the string exactly as writen
+      inside the block. In this case the key word is 'TEXT'.
+      It interprets and do interpolation with variables,
+      unicodes and space sequences.
+
+
+  - 'Nowdoc': Works similary to th Heredoc strings, but
+    when declaring the string, the key word must be in
+    single quotes ('').
+
+    The nowdoc not interprets and don't do interpolation,
+    as the single quote strings.
+
+    Example:
+
+      - 'echo <<< 'TEXT'
+      
+        Testing heredoc strings...
+                        Testing heredoc strings...
+      
+      TEXT;': It will generate the string exactly as writen
+      inside the block. In this case the key word is 'TEXT'.
+      But it will not interpret variables or unicodes.
+
+
+  Scape Sequence
+
+      - Used to inform to interpreter that the next char
+        must not be interpreted or must be interpreted
+        as a predefined value. It works mainly inside
+        double quoted strings, but for some cases can be
+        used inside single qquoted strings.
+
+        Use the character '\' to sinalize a scape sequence.
+
+        Examples:
+
+          - '\"': Add (") as only a quote character and not
+            a string delimitation.
+
+          - '\n': Add new line.
+
+          - '\t': Horizontal tabulation.
+
+          - '\\': Scape sequence for a 'inverted bar'.
+
+          - '\$': Currency signal (sinalize that is only a 
+            currency signal and not in a variable context).
+
+          - '\u{}': Codepoint unicode.
+
