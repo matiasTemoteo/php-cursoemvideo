@@ -1,0 +1,14 @@
+Language PHP
+
+ To use PHP, the first way, it is create PHP template code inside HTML files.
+ It is possible adding the code: '<?php >'.
+
+Printing data in HTML
+
+  - To print data, we can use 'echo' or 'print'. Both
+    ways are valid and functional.
+
+    Example:
+
+      - 'echo "Hello World!";' - Print 'Hello World'.
+      - 'print "Hellow World";' - Print 'Hello World'.
