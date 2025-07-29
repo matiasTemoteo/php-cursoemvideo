@@ -154,3 +154,66 @@ Ainda vale a pena Estudar PHP?
 
  - Muitas empresas utilizam o PHP em seus projetos na atualidade.
  - Muitos projetos antigos e atuais utilizam o PHP.
+
+
+Como funciona o PHP?
+
+ - Trabalha em conjunto com HTML, CSS a Javascript.
+
+ - Nomeclaturas Client-side e Server-side:
+
+   - Client: Dispositivo usado para acessar um serviço
+     * Usado pelos usuários dos serviços
+
+   - Server: Computador onde a estrutura base do serviço esta
+     implementada.
+
+   - Client-side: Modelo de arquitetura onde os arquivos que
+     compõe o software web são enviados para o client sem
+     um processamento prévio no proprio servidor.
+
+   - Server-side: Modelo de arquitetura onde os arquivos que
+     compõe o software web são gerados após um processamento
+     interno do servidor, envolvendo chamdas de apis, consultas
+     em bancos de dados e outras operações, tendo como resultado
+     o conjunto de arquivos resultantes que por sua vez são enviados
+     para o client.
+ 
+ - Nomeclaturas Frontend e backend:
+
+   - Desenvolvedor frontend é o profissional focado em
+     desenvolver o software que será enviado para o client,
+     como HTML, CSS e Javascript.
+
+   - Desenvolvedor backend é o profissional focado em
+     desenvolver o software que roda no servidor e que
+     consulta banco de dados, apis e que pode retornar
+     arquivos para o client ou apenas servir dados para
+     o client.
+
+ O PHP é uma linguagem server-side que roda dentro do servidor
+ como visto acima. Ele é responsável por realizar o processamento
+ dos dados recebidos do client, consultar bancos de dados, consumir
+ APIs e a partir do seu processamento, entregar arquivos HTML, CSS e
+ Javascript para o client como resultado final, o que é conhecido como
+ Server-side-rendering.
+
+ O PHP também pode trabalhar com APIs Rest, aonde ele disponibiliza
+ um endereço Web (url) para uma API que recebe dados e retorna dados
+ para um outro servidor ou client totalmente a parte do PHP, nesse
+ caso, o PHP não retorna os arquivos HTML, CSS e Js, mas sim os dados
+ requisitados, pois os arquivos web em si foram dispobilizados por
+ outro servidor.
+
+
+É possível criar tudo em PHP?
+
+ - PHP é uma linguagem de programação server-side voltada para
+   criação de softwares no lado do servidor em soluções  Web.
+
+ - Não é a uma linguagem voltada para o desenvolvimento client-side
+   ou para soluções desktop ou embarcada.
+
+ - O melhor resultado usando PHP vai ser obtido no desenvolvimento
+   web no lado do servidor, qualquer outro uso, até é possível, mas
+   não foi pra isso que a linguagem foi criada.
