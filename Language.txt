@@ -68,7 +68,7 @@ Using Date
       Define the time zone as São Paulo time.
 
 
-Variables and Constant
+Variables and Constants
 
   - Variables/constants are spaces in the memory that can be
     reserved and named by a programming language. These spaces
@@ -131,8 +131,66 @@ Variables and Constant
     - Use snake_case for constant namming.
 
     
+Primitive Types
 
-Atributive Oeperators
+  PHP is a weak typed language, where there is not absolute
+  typing for variables or constants and variables can be
+  modified in value and in type.
+
+  There three primitive types classes:
+
+    - escalable
+    - Composed
+    - Special
+
+  Escalable types:
+
+    - String: Characters String (alphanumeric, symbols, ASCII, etc).
+      Ex: "test1", "Alberto", "12345", "false".
+
+    - Integer: Numeric interger value.
+      Ex: 1, 15, 1589, 0x4A, -48.
+
+      * '0x' - Hexadecimal values
+        '0b' - Binary values
+        '0' - Octal values
+
+    - Float, Double, Real: Numeric real value.
+      * Real is now deprecated
+      Ex: 4.8, 179.47, 5e2, 750.01, -3.5.
+
+    - Boolean: Logic values (true or false).
+      Ex: true, false.
+
+  Composed types:
+
+    - Array: List of values, enumerated by indexes, declared
+      using "[]".
+
+    - Object: Instance of a class, with internal atributes and
+      methods.
+
+
+  It is possible force some value to be converted to another
+  one, using cast statement. The cats statemet is typed as
+  the type of conversion inside "()" before the value or
+  variable to be casted/converted.
+
+  Example:
+
+    - '$value = (int) "100";': Convert the "100" to integer.
+
+  There is a function in PHP used to show the variable type.
+  The function 'var_dump()'.
+
+  Example:
+
+    - '$num = 50;': Declare a variable '$num' with value 50.
+
+    - 'var_dump($num)': Shows a message about type and value of the variable '$num' as following: 'int(50)'.
+
+
+Atributive Operators
 
   - '=': Used to atribute the followed value to a variables or
     constants.
