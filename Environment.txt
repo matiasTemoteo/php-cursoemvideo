@@ -3,4 +3,15 @@ Para rodar o PHP, os requisitos são os seguintes:
  - Navegador (Web Browser - Google Chrome, Edge, Firefox, etc)
  - Code Editor (Vs Code)
  - AMP - Apache, MySql and PHP Interpreter (Xampp)
+
+ Após instalar o Xampp, teremos o board de configurações
+ que permite ligar ou desligar as ferramentas relacionadas,
+ como o apache e o MySql. O apache será o responsável por
+ criar o servidor local que processará o php nos projetos
+ desenvolvidos.
+
+ Para permitir que o Xampp reconheça esses arquivos e o
+ apache rode o servidor local considerando eles, é
+ necessário que o projeto em questão esteja salvo dentro
+ da pasta 'htdocs' dentro da pasta de instalação do Xampp.
  
