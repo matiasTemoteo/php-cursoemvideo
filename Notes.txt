@@ -217,3 +217,25 @@ Como funciona o PHP?
  - O melhor resultado usando PHP vai ser obtido no desenvolvimento
    web no lado do servidor, qualquer outro uso, até é possível, mas
    não foi pra isso que a linguagem foi criada.
+
+
+Pre-processamento
+
+ O PHP é uma linguagem que é pre-processada no servidor,
+ de forma que toda o código escrito em PHP será lido,
+ interpretado e processado dentro do servidor, onde será
+ obtido um resultado a partir desse processamento. Esse
+ resultado é o que será enviado para o cliente.
+
+ Ou seja, o código PHP nunca é enviado para o cliente.
+ Somente o código HTML, CSS e Javascript são enviados.
+ 
+ Então, em uma aplicação PHP, no momento que ocorre uma
+ requisição do cliente, o servidor irá preparar os códigos
+ HTML, CSS e Javascript que estão fora das declarações
+ PHP e irá deixa-los prontos para serme enviados. Enquanto
+ o código PHP será processado ainda no servidor e somente
+ quando todo o processamento tiver sido consluído é que
+ o conjunto todo é enviado ao cliente, contendo agora os
+ códigos já prontos mais o código gerado pelo resultado do
+ PHP.
