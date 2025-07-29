@@ -1,0 +1,6 @@
+Para rodar o PHP, os requisitos são os seguintes:
+
+ - Navegador (Web Browser - Google Chrome, Edge, Firefox, etc)
+ - Code Editor (Vs Code)
+ - AMP - Apache, MySql and PHP Interpreter (Xampp)
+ 
