@@ -1,7 +1,17 @@
 Language PHP
 
  To use PHP, the first way, it is create PHP template code inside HTML files.
- It is possible adding the code: '<?php >'.
+ It is possible adding the code: '<?php >'. This tag is named
+ as 'Super Tag PHP'.
+
+ Other ways to declare PHP code:
+
+  - '<? ?>': Short open tag (requires configuration).
+
+  - '<% %>': ASP tag (requires configuration / deprecated).
+
+  - '<?="..."?>': Short tag PHP (used when there is only one command echo or print).
+
 
 Printing data in HTML
 
@@ -12,3 +22,47 @@ Printing data in HTML
 
       - 'echo "Hello World!";' - Print 'Hello World'.
       - 'print "Hellow World";' - Print 'Hello World'.
+
+
+Show server information
+
+  - To show data/information about PHP and current server,
+    just use 'phpinfo()' function.
+
+    Example:
+
+      - 'phpinfo();' - Shows php data and server data, like:
+         version, Os, architecture and environment.
+
+
+Using Date
+
+  - The function 'date()' will return the date information.
+    It is possible configure the type of date required with
+    parameters for the function.
+    
+    Some parameters are the date format, day mounth and year  type like 'd/m/y' or 'D/M/Y'.
+
+    Other parameters are the time format, hour, minute and
+    second like 'G:i:s' or 'H:i:s'.
+
+    Example:
+
+      - date("D/M/Y"): Return the date following the format:
+        'Week day / Mounth name / Year number' - Tue/Jul/2025.
+
+      - date("d/m/y"): Return the date following the format:
+        'Day number / mounth number / year two char' - 29/07/25.
+
+      - date('G:i:s): Returns the time following the format:
+        'hour : minute : second'.
+
+
+  - It is possible to configure the time zone to be used by
+    date function in server, using the function:
+    'date_default_timezone_set()'.
+
+    Example:
+
+      - date_default_timezone_set("America/Sao_Paulo"): 
+      Define the time zone as São Paulo time.
