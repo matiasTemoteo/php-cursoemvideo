@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    height: 100vh;
+    background-color: #1511f7b4;
+    background-image: linear-gradient(
+        to bottom,
+        #1b1a72b4,
+        #03021fb4
+    )
+}
+
+header {
+    height: 80px;
+    padding-top: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #f8f8f8;
+    font-size: 1.5em;
+}
+
+main {
+    width: 300px;
+    margin: auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #15151565;
+}
+
+form {
+    width: 280px;
+    height: 200px;
+    background-color: #dbd4db;
+    padding-top: 5px;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main div {
+    width: 200px;
+}
+
+#div-input {
+    padding: 10px 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#div-input label {
+    font-size: 1em;
+}
+
+#div-input input[type=text] {
+    background-color: #efeff9;
+    border: 1px solid #050505;
+    border-radius: 2px;
+    padding: 4px 8px;
+}
+
+#div-input input[type=text]:focus-within {
+    outline: none;
+    background-color: #e7e8f5;
+}
+
+#div-submit {
+    padding-top: 15px;
+}
+
+#div-submit input[type=submit] {
+    padding: 5px 15px;
+    background: #252525;
+    border: 1px solid #324532;
+    border-radius: 4px;
+    color: white;
+    width: 100%;
+}
+
+#div-submit input[type=submit]:hover {
+    background: #f3f5f3;
+    color: #151525;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#div-submit input[type=submit]:active {
+    box-shadow: inset 0 0 8px #20202075;
+}

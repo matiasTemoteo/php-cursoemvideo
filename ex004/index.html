@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Interação com Formulários</title>
+</head>
+<body>
+    <header>
+        <h1>Introduce yourself to us</h1>
+    </header>
+    <main>
+        <form action="cad.php" method="get">
+            <div id="div-input">
+                <label for="iName">Name:</label>
+                <input type="text"
+                    name="name" id="iName"
+                >
+            </div>
+            <div id="div-input">
+                <label for="iSupName">Sup Name:</label>
+                <input type="text"
+                    name="sName" id="iSupName"
+                >
+            </div>
+            <div id="div-submit">
+                <input type="submit" value="Send">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
