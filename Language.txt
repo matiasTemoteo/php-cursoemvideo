@@ -387,3 +387,184 @@ Forms
    ?>
 
 
+Arithmetic Operators
+
+ Operators used to perform math operations, like sum,
+ subtraction, multiply, division, power, square root, etc.
+
+ In PHP, the math operations works even with strings,
+ if the string is a valid number.
+
+ If the string is not a valid number, it returns error
+ informing of no valid number in string.
+
+ In old versions, php executed sum between numbers found
+ inside a string, even the string having more than just
+ the number. Ex: "12 test" + "10 test" = 22. But in the
+ current versions, it is being validated and not works more.
+
+
+  - '+': Sum between numbers. 
+
+    Example: 4 + 4 = 8 or "4" + "4" = 8.
+    
+ 
+  - '-': Subtraction bwtween numbers.
+
+    Example: 8 - 6 = 2 or 10 - "5" = 5.
+
+
+  - '*': Multiply bwtween numbers.
+
+    Example: 9 * 5 = 45 or "8" * "2" = 16.
+
+
+  - '/': Division between numbers.
+
+    Example: 20 / 4 = 5 or "50" / 5 = 10.
+
+
+  - '%': Integer division rest between numbers (module).
+
+    Example: 10 % 2 = 0 or "8" % 3 = 2.
+
+
+  - '**': Power between numbers.
+
+    Example: 6 ** 2 = 36 or 4 ** "3" = 64.
+
+    * This operator was added after php version 5.6.
+    
+
+  Order of precedence:
+
+    1 - '**' power
+
+    2 - '/' division
+      - '%' module
+      - '*' multiply
+
+    3 - '+' sum
+      - '-' subtraction
+
+    * When more than a operation of same order of precedence
+      appears in a expression, the order of execution is
+      done from left to right in order of appearence.
+
+    * There is possible use parenthesis in math expressions
+      to envolve expressions and change order of precedence.
+
+      Example: 16 / ( 5 + 3) * 2 = 16.
+
+      In this case the expression '5 + 3' was executed first
+      than the others because it was inside parenthesis.
+
+
+Math functions
+
+  - 'abs()': Return the absolute value of a number or
+    expression. 
+
+    Example: abs(10) = 10 or abs(-10) = 10.
+
+
+  - 'base_convert()': convert the informed number to
+    another numeric base like decimal, hexadecimal,
+    octal, binary, etc. The funtion receive some
+    parameters: the number to be converted, the current
+    numeric base of the number, and the numeric base
+    expected to be converted as result.
+
+    Example: base_convert(254, 10, 8) = 376.
+
+    * In this example, ht enumber '254' is being
+      converted from base '10' to octal (base '8').
+
+
+  - 'ceil()': Round the number to the ceil.
+
+    Example: ceil(10.6) = 11.
+
+
+  - 'floor()': Round the number to the floor.
+
+    Example: floor(10.6) = 10.
+
+
+  - 'round()': round the number of the most near
+    edge (floor or ceil).
+
+    Examples: round(10.6) = 11 or round(10.4) = 10.
+
+
+  - 'hypot()': Calculate hypotenusis value base on
+    catets values.
+
+    Example: hypot(3, 4) = 5.
+
+
+  - 'intdiv()': Execute the integer division between
+    numbers. Different of operator '%' that only returns
+    the division rest, this function returns the division
+    result itself.
+
+    Examples: intdiv(5, 2) = 2 or intdiv(15, 6) = 3.
+
+
+  - 'min()': Returns the minimun value encountered in a
+    given argument list.
+
+    Example: min(7, 4, 3, 2, 9, 25) = 2.
+
+
+  - 'max()': Returns the maximun value encountered in a
+    given argument list.
+
+    Example: max(4, 1, 11, 35, 0, 7) = 35.
+
+  
+  - 'pi()': Returns the PI constant value.
+
+    Example: pi() = 3.14159265...
+
+    * There is a default constant called 'M_PI' in PHP,
+      that also have the PI value saved for consult.
+
+    Example: 'echo M_PI;' = 3.14159265...
+
+
+  - 'pow()': Returns the result of power between numbers.
+     Used mainly in old versions whe there was not
+     implemented the oeperator '**'.
+
+     Example: pow(5, 2) = 25.
+
+     * When use this way instead of the operator '**',
+     it will lose the order of precedence.
+
+
+  - 'sin()': Returns the sine of a number in radians.
+
+    Example: sin(60) = -0.3048...
+
+
+  - 'cos()': Returns the cosine of a number is radians.
+
+    Example: cos(60) = -0.9524...
+
+
+  - 'tan()': Returns the tangent of a number in radians.
+
+    Example: tan(60) = 0.3200...
+
+
+  - 'sqrt()': Returns squareroot of a number.
+
+    Example: sqrt(16) = 4.
+
+    * There is no function for cubic root or other roots,
+    but it is possible use operator '**' and fraction
+    values to perform other root operations.
+
+    Example: 27 ** (1/3) = 3 or 256 ** (1/4) = 4.
+
