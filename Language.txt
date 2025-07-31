@@ -386,6 +386,12 @@ Forms
       $value2 = $_GET["value2"] ?? "Default value";
    ?>
 
+ Query String
+
+  Url string block with paramters, which ones will be processed
+  as GET request in PHP. These parameters can be retrieved using
+  the SuperGlobal '$_GET'.
+
 
 Arithmetic Operators
 
@@ -656,3 +662,101 @@ Number Formatting
 
        * Return the value exactly as this: 'US$ 4,856.00'.
 
+
+Super Globals
+
+ PHP default variables available in global context (any part of
+ the script). These variables are used to retrieve runtime and
+ configuration data from current program running session.
+
+ The Super Globals variables name are composed by '$' followed
+ by the name of variable (almost all have a '_' between '$'
+ and the name).
+
+    - '$_GET': Retrieve the data sent using Get method.
+
+    - '$_POST': Retrieve the data sent using Post method.
+
+    - '$_COOKIES': Retrieve the cookies data, when sent.
+
+    - '$_REQUEST': Retrieve all the possible data sent
+      from the form, including the Get, post and cookies
+      data (works as a combination of the others above).
+
+    - '$_COOKIE': Retrieve the data from the current cookies
+      available in browser. These cookies are normally set by
+      own PHP program when called once and after that will
+      be available for consume for a while (it expires after
+      some time - what is configurable in PHP).
+
+    - '$_SESSION': Retrieve the session data of the currect
+      PHP page session, also saved in browser. It is created
+      by PHP program when called once and will be available for
+      some time (also have a expiration time configurable).
+
+    - '$_ENV': Retrieve all the environment created variables.
+      These are variables created in sever to contain important
+      values or configurations used in PHP programs (passwords,
+      DataBase credentials, API URLs, constant values, etc).
+
+    - '$_SERVER': Retrieve some variables, configurations and
+      file names related to the currenct server that is running
+      the PHP program (the part of server acessible for the
+      PHP, not the all server instances).
+
+    - '$GLOBALS': Retrieve all the data from the other Super
+      Globals in the same object. It is slowerd then the others
+      because it loads all the data of them once.
+
+
+Cookie and Session
+
+ Cookies are data objects that cen be saved in clients side
+ (browser) to make it fast some process while user is navigating.
+ It is used also, to save users preferences and other similar
+ data to help improve the user experience while in the website.
+
+ The cookies must not contain sensitive data or other important
+ information from own website or user. These data are available
+ in the browser and can be acessed by other websites or users.
+
+ It is possible create a cookie variable with the function
+ 'setcookie()'. It is used in own PHP script.
+
+ Example:
+
+   - setcookie("week-day", "thursday", time() + 3600);
+
+   * In this example, it was created a cookie variable
+   called 'week-day', containing the value 'thursday'.
+   It was informed the value 'time() + 3600' that is the
+   expiration time in seconds, in this case 1 hour.
+
+
+
+ Session is a object similar to the cookie, but it is used
+ to save the users session, to inform that the current users
+ has logged in and is already authenticated in the moment.
+
+ If it was not used sessions, always te user entrers a website,
+ it would ask him to log in again, so with the session it is 
+ possible maintain some information to comprovate that the
+ current user is already logged and this login time still is
+ valid.
+
+ Similar to cookies, it will expirate after some time and
+ will need to be recreated again.
+
+ It is possible define a new session instance with the funtion
+ 'session_start()'. It will created these session instance and
+ will be available add session variables using the Super Global
+ session.
+
+ Example:
+
+   - session_start();
+    $_SESSION["test"] = "Working...";
+
+    * In this case the session is being started with the
+    function 'sessions_start()' and the variable 'test' is
+    being created for the current session.
