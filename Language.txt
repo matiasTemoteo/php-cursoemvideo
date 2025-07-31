@@ -568,3 +568,91 @@ Math functions
 
     Example: 27 ** (1/3) = 3 or 256 ** (1/4) = 4.
 
+
+  - 'rand()': Generate and returns a randomic number,
+    between given minimum and a maximum number.
+
+    Example: rand(0, 50) = 25.
+             rand(0, 50) = 36.
+
+    * Used an old algorithm from 1950s called
+    'Linear Congrential Generator'.
+
+    * Accepts a minimum number bigger than the maximun
+      number (inverted given numbers).
+
+    * It is informed that after PHP v7.0, this function
+    calls the newest 'mt_rand()' instead. But it is
+    recomended use the 'mt_rand()' directly.
+
+
+  - 'mt_rand()': Generate and returns a randomic number,
+    between given minimum and d maximum numbers.
+
+    Example: mt_rand(15, 78) = 55.
+             mt_rand(15, 78) = 70.
+
+    * Uses a more up to date algorithm from 1997, called
+    'Mersenne Twister'.
+
+    * Not accesps a minimum number bigger than the maxmim one.
+
+
+  - 'random_int()': Generate and returns secured encrypted
+    numbers using cryptography methods, between given minimum
+    and maximum numbers.
+
+    Example: random_int(5, 30) = 17.
+             random_int(5, 30) = 9.
+
+    * It is slower than the others ('rand()' and 'mt_rand()')
+    because of the cryptographic algorithm.
+
+
+
+Number Formatting
+
+  String functions used to format nummeric and currency values.
+
+
+  - 'number_format()': Format the given number to a specified
+    decimal houses count and also defining the decimal
+    separator (in us, this is '.' and br it is ',') and also
+    the thousand separator (in us it is ',' and in br it is '.').
+
+    Example:
+
+     - number_format(2500, 2, '.', ','); - Returns '2,500.00'.
+     - number_format(3650, 2, ',', '.'); - Returns '3.650,00'.
+
+
+  - 'numfmt_create()': Create a rule pattern for numeric formatting
+    to be used in number format function. It requires international
+    library enabled for running (maybe not run properly in local machines, even the library is not enabled).
+
+    Example:
+
+     - numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+       * Creates a format for Brazilian Currency value.
+
+
+  - 'numfmt_format_currency()': Format the given currency value to
+    the expected format, using a created pattern and a specified
+    currency type (BRL, USD, etc).
+
+    Example:
+
+     - $pattern = numfmt_create("pt_BR",NumberFormatter::CURRENCY);
+
+       numfmt_format_currency($pattern, 4856, "BRL");
+
+       * Return the value exactly as this: 'R$ 4.856,00'.
+
+
+     - $pattern = numfmt_create("en_US",NumberFormatter::CURRENCY);
+
+       numfmt_format_currency($pattern, 4856, "USD");
+
+       * Return the value exactly as this: 'US$ 4,856.00'.
+
