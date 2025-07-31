@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #0a0785,
+        #030220
+    );
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+main {
+    width: 300px;
+    height: auto;
+    margin: 30px auto;
+    background-color: #f8f8f8;
+    border: 1px solid #dbd9d9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #121212;
+}
+
+section {
+    width: 270px;
+    height: auto;
+    margin: 6px auto;
+    background-color: #dddddd;
+    border-radius: 5px;
+}
+
+section#sec-result {
+    background-color: #f8f8f8;
+
+}
+
+section#sec-result a {
+    width: 95%;
+    background-color: #2a1f75;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 3px 0;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section#sec-result a:hover {
+    background-color: #4d419c;
+}
+
+#div-input {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 7px 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+#div-input label {
+    font-weight: bold;
+}
+
+#div-input input {
+    width: 98%;
+    margin: auto;
+    padding: 3px 8px;
+    border: 1px solid #050505;
+    border-radius: 4px;
+}
+
+#div-input input:focus-within {
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+#div-submit {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 7px 0;
+}
+
+#div-submit input {
+    width: 90%;
+    padding: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #140a00;
+    background-color: #028a19;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#div-submit input:hover {
+    cursor: pointer;
+    background-color: #56b666;
+}
