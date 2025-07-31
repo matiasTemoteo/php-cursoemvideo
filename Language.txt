@@ -393,6 +393,24 @@ Forms
   the SuperGlobal '$_GET'.
 
 
+ Self Call Form
+
+  It is possible set the action atribute on form, to self
+  call the own PHP file. Just use the name of the file as
+  value to the action.
+  
+  But instead of just put the name in string, it is possible
+  use the Global Variable '$_SERVER' requesting the value 
+  'PHP_SELF'. And to add the varibale value in the HTML
+  property, it is possible use the PHP short tag "<?=?>".
+
+  Example:
+
+    - <form action="<?=$_SERVER["PHP_SELF"]?>">
+      </form>
+
+
+
 Arithmetic Operators
 
  Operators used to perform math operations, like sum,
