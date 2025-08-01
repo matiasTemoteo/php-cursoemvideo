@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom,
+        #0a0785,
+        #030220
+    );
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+h1, h2 {
+    margin: 15px 0;
+}
+
+main {
+    width: 300px;
+    height: auto;
+    margin: 30px auto;
+    background-color: #f8f8f8;
+    border: 1px solid #dbd9d9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px #121212;
+}
+
+form {
+    width: 270px;
+    height: auto;
+    margin: 15px auto;
+    border: 2px solid #f0f0f0;
+}
+
+form div {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 8px 10px;
+}
+
+section {
+    width: 240px;
+    margin: 25px auto;
+    border: 2px solid #f0f0f0;
+    height: 150px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section h2 {
+    font-size: 1.2em;
+}
+
+section div#div-result {
+    width: 210px;
+    height: 80px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    align-items: stretch;
+    justify-items: stretch;
+}
+
+section div#div-result div {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+}
+
+section div#div-result :nth-child(2),
+section div#div-result :last-child {
+    border-left: 2px solid black;
+}
+
+section div#div-result :nth-child(2) {
+    border-bottom: 2px solid black;
+}
+
+section div#div-result :nth-child(3) {
+    text-decoration: underline;
+}
+
+
